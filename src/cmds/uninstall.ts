@@ -28,7 +28,13 @@ export async function handler(argv: ReturnType<typeof builder>['argv']) {
 
   modifyPackageJson(conf => {
     for (const p of pkg) {
-      delete conf[p];
+      if (conf.dependencies) {
+        delete conf.dependencies[p];
+      }
+
+      if (conf.devDependencies) {
+        delete conf.devDependencies[p];
+      }
     }
 
     return conf;

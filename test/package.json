@@ -6,9 +6,11 @@
     "postinstall": "../bin/cli install && diff -r ../lib node_modules/npm-install-from-local/lib"
   },
   "npm-install-from-local": {
-    "npm-install-from-local": ".."
+    "devDependencies": {
+      "npm-install-from-local": ".."
+    }
   },
-  "dependencies": {
+  "devDependencies": {
     "npm-install-from-local": "file:../npm-install-from-local-0.1.0.tgz"
   }
 }
