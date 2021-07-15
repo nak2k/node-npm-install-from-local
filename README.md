@@ -2,6 +2,13 @@
 
 Install packages from local.
 
+## Installation
+
+```
+npm i -D npm-install-from-local
+npm set-script postinstall "npm-install-from-local install"
+```
+
 ## Usage
 
 ```
