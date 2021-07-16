@@ -83,7 +83,7 @@ function sortProps<T extends { [name: string]: unknown }>(obj: T): T {
 }
 
 export async function spawnAsync(command: string, options: SpawnOptionsWithoutStdio = {}) {
-  const p = spawn(command, { shell: true, ...options });
+  const p = spawn(command, { shell: true, stdio: 'inherit', ...options });
 
   return new Promise<void>((resolve, reject) => {
     return p
