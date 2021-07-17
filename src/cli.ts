@@ -12,6 +12,7 @@ async function main() {
         type: 'boolean',
       },
     })
+    .strict()
     .completion()
     .version()
     .help()
