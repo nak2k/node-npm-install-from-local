@@ -1,6 +1,6 @@
 {
   "name": "npm-install-from-local",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Install packages from local",
   "author": "Kengo Nakatsuka <kengo.nakatsuka@gmail.com>",
   "bin": {
