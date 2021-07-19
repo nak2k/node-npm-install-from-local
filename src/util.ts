@@ -8,6 +8,9 @@ export interface Dependencies {
   [pkgName: string]: string;
 }
 
+/**
+ * The type of the configuration for npm-install-from-local in the package.json.
+ */
 export interface Conf {
   dependencies?: Dependencies;
   devDependencies?: Dependencies;
@@ -82,6 +85,9 @@ function sortProps<T extends { [name: string]: unknown }>(obj: T): T {
   );
 }
 
+/**
+ * Run specified command in a shell.
+ */
 export async function spawnAsync(command: string, options: SpawnOptionsWithoutStdio = {}) {
   const p = spawn(command, { shell: true, stdio: 'inherit', ...options });
 
