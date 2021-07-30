@@ -6,7 +6,7 @@ Install packages from local.
 
 ```
 npm i -D npm-install-from-local
-npm set-script postinstall "npm-install-from-local install"
+npm set-script preinstall "npm-install-from-local install"
 ```
 
 ## Usage
